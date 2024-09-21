@@ -13,6 +13,7 @@
 		B685CD662C6F6EF1000513EF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B685CD652C6F6EF1000513EF /* Base */; };
 		B685CD682C6F6EF2000513EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B685CD672C6F6EF2000513EF /* Assets.xcassets */; };
 		B685CD6B2C6F6EF2000513EF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B685CD6A2C6F6EF2000513EF /* Base */; };
+		B685CD742C6F6F15000513EF /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = B685CD732C6F6F15000513EF /* Turbo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B685CD742C6F6F15000513EF /* Turbo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = cars;
+			packageProductDependencies = (
+				B685CD732C6F6F15000513EF /* Turbo */,
+			);
 			productName = cars;
 			productReference = B685CD5B2C6F6EF1000513EF /* cars.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B685CD522C6F6EF1000513EF;
+			packageReferences = (
+				B685CD722C6F6F15000513EF /* XCRemoteSwiftPackageReference "turbo-ios" */,
+			);
 			productRefGroup = B685CD5C2C6F6EF1000513EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -295,6 +303,8 @@
 				DEVELOPMENT_TEAM = S6999T6KSG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = cars/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cars;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +333,8 @@
 				DEVELOPMENT_TEAM = S6999T6KSG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = cars/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cars;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -363,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B685CD722C6F6F15000513EF /* XCRemoteSwiftPackageReference "turbo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/turbo-ios";
+			requirement = {
+				branch = "turbo-navigator";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B685CD732C6F6F15000513EF /* Turbo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B685CD722C6F6F15000513EF /* XCRemoteSwiftPackageReference "turbo-ios" */;
+			productName = Turbo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B685CD532C6F6EF1000513EF /* Project object */;
 }
